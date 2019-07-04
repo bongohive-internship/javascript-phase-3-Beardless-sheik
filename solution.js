@@ -17,7 +17,16 @@ function loopIteration() {
 }
 
 function sumMultiples() {
-    var multipleThree, multipleFive;
+    "use strict"
+    let multipleThree = [],
+        multipleFive = [],
+        result;
+    for (let i = 0; i <= 1000; i++) {
+        if (i % 3 == 0) {
+            multipleThree.push(i);
+        } else if (i % 5 == 0) {
+            multipleFive.push(i);
+        }
+    }
+    result = (multipleThree.reduce(acc, item) => ) + (multipleFive.reduce())
 }
-
-loopIteration();
